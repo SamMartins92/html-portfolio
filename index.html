@@ -20,6 +20,44 @@
         </header>
     </div>
     <style>
+.nav-pills {
+    --bs-nav-pills-border-radius: var(--bs-border-radius);
+    --bs-nav-pills-link-active-color: #fff;
+    --bs-nav-pills-link-active-bg: #0d6efd;
+}
+        
+.nav {
+    --bs-nav-link-padding-x: 1rem;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: var(--bs-link-color);
+    --bs-nav-link-hover-color: var(--bs-link-hover-color);
+    --bs-nav-link-disabled-color: var(--bs-secondary-color);
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: var(--bs-nav-pills-link-active-color);
+    background-color: var(--bs-nav-pills-link-active-bg);
+}
+.nav-pills .nav-link {
+    border-radius: var(--bs-nav-pills-border-radius);
+}
+        .nav-link {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: var(--bs-nav-link-color);
+    text-decoration: none;
+    background: 0 0;
+    border: 0;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+        
         /* Carousel base class */
 .carousel {
   margin-bottom: 4rem;
@@ -111,20 +149,5 @@
   </footer>
 </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script>
-        // Get all the nav links
-        const navLinks = document.querySelectorAll('.nav-link');
-
-        // Add a click event listener to each nav link
-        navLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                // Remove the 'active' class from all nav links
-                navLinks.forEach(nav => nav.classList.remove('active'));
-                
-                // Add the 'active' class to the clicked nav link
-                this.classList.add('active');
-            });
-        });
-    </script>
 </body>
 </html>
