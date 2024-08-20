@@ -11,25 +11,39 @@
 </head>
 
 <body>
-    <header class="fixed-header d-flex justify-content-center py-3">
-        <ul class="nav nav-pills">
-            <li class="nav-item">
-                <a href="#" class="nav-link active" aria-current="page">Home</a>
-            </li>
-            <li class="nav-item">
-                <a href="https://www.google.com/" class="nav-link">Features</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Pricing</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">FAQs</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">About</a>
-            </li>
-        </ul>
-    </header>
+    <nav class="fixed-header navbar navbar-dark bg-dark" aria-label="First navbar example">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Samuel Martins</a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="navbar-collapse collapse" id="navbarsExample01" style="">
+            <ul class="navbar-nav me-auto mb-2">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form role="search">
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            </form>
+          </div>
+        </div>
+      </nav>
 <style>
         .fixed-header {
             position: fixed;
@@ -105,6 +119,7 @@
             color: black;
         }
     </style>
+    <section id="carousel">
     <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"
@@ -162,8 +177,8 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-
-    <section class="py-5 text-center container">
+</section>
+    <div class="py-5 text-center container">
         <div class="row py-lg-5">
             <div class="col-lg-6 col-md-8 mx-auto">
                 <h1 class="fw-light">Album example</h1>
@@ -175,7 +190,7 @@
                 </p>
             </div>
         </div>
-    </section>
+    </div>
 
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
